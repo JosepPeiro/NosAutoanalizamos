@@ -1,0 +1,95 @@
+---
+title: "NosAutoanalizamos"
+author: "Josep Peiro Ramos"
+date: "8/4/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Especificamos las librerías necesarias en esta lista
+
+packages = c("tidyverse","knitr", "readr", "forcats", "stringr", "dplyr", "ggplot2", "lubridate", "assertive", "GGally", "purrr")
+
+#use this function to check if each package is on the local machine
+#if a package is installed, it will be loaded
+#if any are not, the missing package(s) will be installed and loaded
+package.check <- lapply(packages, FUN = function(x) {
+  if (!require(x, character.only = TRUE)) {
+    install.packages(x, dependencies = TRUE,repos='http://cran.rediris.es')
+  }
+  library(x, character.only = TRUE)
+})
+
+#verify they are loaded
+search()
+```
+
+```{r}
+datos = read_tsv("./data/NosAutoanalizamos2022 - Hoja1.tsv", skip=25) %>% select(-1)
+glimpse(datos)
+```
+
+```{r}
+datos = datos %>% filter(Id != "martsobm")
+```
+
+```{r}
+datos=datos %>% rename(Fecha_Nac=1, Size_Hand=Wr.Hnd, Laterality=NW.Hnd, Study_Hours = HSt, Work_Hours=Hwork)
+datos
+```
+
+```{r}
+datos=datos %>%mutate(ALG=str_replace(ALG, "NC", "3.0"), ANM =str_replace(ANM, "NC", "3.0"), FP=str_replace(FP, "NC", "3.0"), DCS = str_replace(DCS, "NC", "3.0"), MD=str_replace(MD, "NC", "3.0")) %>%
+  mutate(ALG=as.numeric(str_replace(ALG, ",", ".")),
+                 ANM=as.numeric(str_replace(ANM, ",", ".")),
+                 FP=as.numeric(str_replace(FP, ",", ".")),
+                 DCS=as.numeric(str_replace(ALG, ",", ".")),
+                 MD=as.numeric(str_replace(MD, ",", ".")))
+```
+
+```{r}
+datos=datos %>% mutate(Fecha_Nac=dmy(str_replace(Fecha_Nac, "/", "-"))) %>% mutate_if(is.character, as.factor) %>% mutate(Comentarios=as.character(Comentarios))
+```
+
+```{r}
+datos
+```
+
+```{r}
+estadisticos = function(x){
+  minimo = round(min(x, na.rm=T),2)
+  percentil_25 = round(quantile(x, 0.25, na.rm=T),2)
+  mediana = round(median(x, na.rm=T),2)
+  media = round(mean(x, na.rm=T),2)
+  desviacion_tipica = round(sd(x, na.rm=T),2)
+  percentil_75 = round(quantile(x, 0.75, na.rm=T),2)
+  maximo = round(max(x, na.rm=T),2)
+  vector = c(minimo, percentil_25, mediana, media, desviacion_tipica, percentil_75, maximo)
+  return (vector)
+}
+```
+
+```{r}
+algebra = estadisticos(datos$ALG)
+analisis = estadisticos(datos$ANM)
+programacion = estadisticos(datos$FP)
+sociedad = estadisticos(datos$DCS)
+discreta = estadisticos(datos$MD)
+```
+
+```{r}
+matriz_est =rbind(algebra, analisis, programacion, sociedad, discreta)
+matriz_est
+tabla_estadisticos = as.data.frame(matriz_est)
+colnames(tabla_estadisticos)=c("minimo", "percentil_25", "mediana", "media", "desviacion_tipica", "percentil_75", "maximo")
+tabla_estadisticos
+```
+
+```{r}
+#ggpairs(datos)
+```
+
