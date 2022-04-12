@@ -84,12 +84,27 @@ discreta = estadisticos(datos$MD)
 ```{r}
 matriz_est =rbind(algebra, analisis, programacion, sociedad, discreta)
 matriz_est
-tabla_estadisticos = as.data.frame(matriz_est)
-colnames(tabla_estadisticos)=c("minimo", "percentil_25", "mediana", "media", "desviacion_tipica", "percentil_75", "maximo")
+tabla_estadisticos = cbind(rownames(matriz_est), as.data.frame(matriz_est))
+colnames(tabla_estadisticos)=c("asigantura","minimo", "percentil_25", "mediana", "media", "desviacion_tipica", "percentil_75", "maximo")
+rownames(tabla_estadisticos)=NULL
 tabla_estadisticos
 ```
 
+```{r, warning=FALSE}
+ggpairs(datos[,13:17])
+```
+
 ```{r}
-#ggpairs(datos)
+cov(datos[,13:17],method = 'pearson', use = "na.or.complete")
+cor(datos[,13:17],method = 'pearson', use = "na.or.complete")
+```
+Los pares que mas correlacion tienen son Algebra con Matetamitca Discreta y Datos Ciencia y Sociedad con Matematica Discreta
+
+```{r}
+datos[,13:17] %>% gather("asignatura", "nota", 1:5) %>% ggplot(aes(asignatura, nota))+geom_boxplot()
+```
+
+```{r}
+datos %>% select(Sex, 13:17)%>% gather("asignatura", "nota", 2:6) %>% ggplot(aes(asignatura, nota, color=Sex))+geom_boxplot()
 ```
 
