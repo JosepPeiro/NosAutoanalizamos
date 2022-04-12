@@ -29,8 +29,9 @@ search()
 ```
 
 ```{r}
-datos = read_tsv("./data/NosAutoanalizamos2022 - Hoja1.tsv", skip=25) %>% select(-1)
+datos = read_tsv("./data/NosAutoanalizamos2020 - Hoja1.tsv", skip=27) %>% select(-1)
 glimpse(datos)
+#El unico cambio sustancial que he hecho en este trabajo ha sido cambiar el numero de lineas que salta de 25 a 27, porque por razones que no podemos controlar, este archivo requeria de ese cambio
 ```
 
 ```{r}
@@ -103,7 +104,7 @@ ggpairs(datos[,13:17])
 cov(datos[,13:17],method = 'pearson', use = "na.or.complete")
 cor(datos[,13:17],method = 'pearson', use = "na.or.complete")
 ```
-Los pares que mas correlacion tienen son Algebra con Matetamitca Discreta y Datos Ciencia y Sociedad con Matematica Discreta
+Los pares que mas correlacion tienen son Analisis Matematico con Matetamitca Discreta 
 
 ```{r}
 datos[,13:17] %>% gather("asignatura", "nota", 1:5) %>% ggplot(aes(asignatura, nota))+geom_boxplot()

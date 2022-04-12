@@ -1,0 +1,95 @@
+Hoja1				Identificación	Usuario de correo UV. marctor2															
+				Age	Edad en años.															
+				Sex	Sexo: Femenino, Masculino															
+				Wr.Hnd	Distancia del extremo del meñique al extremo del pulgar de la mano con la que escribimos. (en centímetros)															
+				NW.Hnd	Mano con la que escribes: Izquierda, Derecha															
+				Fold	Cruza los brazos. Qué brazo está arriba ?: Izquierdo, Derecho															
+				Pulse	Cuál es tu ritmo cardíaco, en reposo, en latidos por minuto.															
+				Clap	Aplaude. ¿Cómo están las manos ?. 3 casos. 'Der s Izd', (Derecha sobre izquierda) ' Izq s Der', 'Ninguna'															
+				Exer	Cuántos días a la semana realizas ejercicio físico. Numérica de 0-7															
+				Smoke	Fumas: Si / No															
+				Height	Altura (en centímetros)															
+				ALG	Calificación numérica obtenida en álgebra. Usa NA para no presentado y NC, para no compensable, si procede															
+				ANM	Calificación numérica obtenida en análisis matemático. Usa NA para no presentado y NC, para no compensable, si procede															
+				FP	Calificación numérica obtenida en fundamentos de programación. Usa NA para no presentado y NC, para no compensable, si procede															
+				DCS	Calificación numérica obtenida en Datos Ciencia y Sociedad. Usa NA para no presentado y NC, para no compensable, si procede															
+				MD	Calificación numérica obtenida en Matemática Discreta. Usa NA para no presentado y NC, para no compensable, si procede															
+				HSt	Horas de trabajo DIARIAS relacionadas con los estudios, además de la asistencia a clase. 															
+				Hwork	¿Tienes un trabajo remunerado además del estudio ?. Indica las horas de trabajo SEMANALES. 0 indica que no tiene otro trabajo.															
+																				
+																				
+				Comentarios	OBLIGATORIO: Campo de texto libre para incluir comentarios que consideres sobre la asignatura. 															
+					Vuestos comentarios ayudarán a mejorar y permitirán procesar texto.															
+					El primer valor es un ejemplo de registro															
+				DEJAD EL MÍNIMO NÚMERO DE HUECOS POSIBLE																
+																				
+				 ES IMPORTANTE QUE LOS DATOS INCLUIDOS SEAN REALES PARA  PODER OBTENER CONCLUSIONES																
+				Completa una fila de esta tabla con tus datos. Los utilizaréis para hacer una autoanálisis.																
+		Id	Age	Sex	Wr.Hnd	NW.Hnd	Fold	Pulse	Clap	Exer	Smoke	Height	ALG	ANM	FP	DCS	MD	HSt	Hwork	Comentarios
+Registro Ejemplo		martsobm	51	M	22	Derecha	Izquierdo	65	Der s Izq	2	No	178	NP	7	6	4	3,8	5	37,5	Es la primera toma de contactos con el análsis de datos reales. Me resultará de gran utilidad.
+		garedemi	20	M	21	Izquierda	Izquierdo	69	Izq s Der	0	No	184	7	NA	NA	NA	6.9	1	0	Otro examen con múltiples respuestas correctas y me corto las venas.
+		ismafol	19	M	21	Izquierda	Izquierdo	66	Izq s Der	0	No	179	6.29	5.9		NA	4	4	0	Con ganas de ver como aprender las distintas funcionalidades de R.
+		jovianma	19	M	22	Derecha	Derecho	63	Der s Izq	5	No	190	7	8		7	6.5	4	16	La primera vez en el tratamiento de datos
+		jomonca7	18	M	20	Izquierda	Derecho	64	Izq s Der	2	No	174	8,78	8,99	9,8	9,27	8,5	4	0	Muy interesante, tengo ganas de empezar a hacer cosas
+		dagaral6	18	M	18	Derecha	Derecha	66	Der s Izq	2	No	179	7,29	6,74	NA	8,1	6,4	4	0	Me alegra y me motiva que tenga un enfoque más práctico que DCS
+		marana4	18	M	19	Derecha	Izquierdo	60	Der s Izq	2	No	182	8,14	8,78	8,59	9	9,5	3.5	0	
+		serpeigd	19	M	18	Derecha	Derecha	54	Der s Izq	5	Si	177	2.26	6	?	6	7	2	0	Asignatura interesante y muy util, habra que ver como va.
+		xigargi	19	M	20	Derecha	Derecha	65	Der s Izq	6	No	178	7,7	6			7,2	3	0	Gran asignatura si se aprueba.
+		miclar	18	M	20	Derecha	Izquierdo	72	Izq s Der	0	Si	168	2,36	6,68	9,12	8,4	5,7	2	0	A tope con los datos
+		pafegon	33	M	22	Derecha	Derecho	80	Der s Izq	2	Si	173	8.10	8.22	8.1	8.1	7.5	4	0	"Si un gato negro se cruza en tu camino, eso significa que el animal va a algún sitio.'"Groucho Marx
+		jodiazle	18	M	20	Derecha	Izquierdo	63	Izq s Der	0	No	175	                   6.52	                   7.49		6.3	5.1	4	0	Lo cierto, es que me llama la atención la asignatura. Me gustaría adentrarme en las distintas posibilidades que ofrece R. 
+		guisan8	18	M	21	Izquierda	Izquierdo	65	Izq s Der	0	No	175	7.405	                   8.88		6.8	6.1	8	0	Me provoca curiosidad la asignatura
+		ferguial	19	M	19	Derecha	Izquierdo	68	Der s Izq	3	No	171	7	6	5.5	7	6.1	2	0	Interesante, veremos el tratamiento de los datos 
+		clauca8	18	F	19	Derecha	Izquierdo	67	Der s Izq	0	No	177	8.36	7.97	09.02	7.74	8.5	4	0	Espero tratar los datos adecuadamente y obtener informacion de ellos
+		slagar	22	M	20,5	Derecha	Derecho	70	Der s Izd	1	No	183	9,7	8,9	10	NA	9,4	1	0	Me parece que la asignatura puede darme conocimientos prácticos a aplicar en mecatrónica, ya que complementan mi perfil como ingeniero
+		barsami	18	M	21	Derecha	Derecho	94	Der s Izd	3	No	187	6,64	6,19		7.58	6	2,5	0	Tiene pinta de ser una asignatura bastante interesante y útil
+		paucaga4	18	F	19	Derecha	Derecho	69	Der s Izq	3	Si	160	8.114	07.07	?	6.3	6.4	2	6	Espero que sea facil
+		guilo4	19	M	19,5	Derecha	Izquierdo	69	Izq s Der	3	No	174	7,415	5,5		8,04	5,6	3	0	Me parece una buena extensión de datos ciencia y sociedad
+		jeheji	18	M	21	Derecha	Derecho	65	Izq s Der	4	No	174	8.325	                   7.68	6.7	7.4	7.5	2	0	Una asignatura interesante y útil para el futuro de la carrera
+		lugarii	19	F	17	Derecha	Izquierdo	66	Izq s Der	0	Si	164	 7.52	6.32		6.2	3.6	1	0	Una asignatura que a primera vista parece interesante y de la que se puede aprender mucho.
+		roaig	18	M	19	Izquierda	Izquierdo	72	Izq s Der	0	Si	181	7	6.5			3	1	0	Asignatura que aparentemente es bastante interesante
+		cinbar	18	F	20	Derecha	Derecho	72	Ninguna	0	No	170	7,94	7,01	7,95	8,06	6,4	1	0	Creo que se puede sacar un mayor rendimiento en la programación en R, gracias a esta asignatura
+		achara	18	F	20	Derecha	Izquierdo	62	Der s Izq	5	No	168	8	7,87	9,79	9	7,2	2	0	Asignatura en la que espero aprender un mejor manejo de los datos. 
+		marloan5	18	F	21	Derecha	Derecho	64	Der s Izq	5	No	168	6.7	7.55	2.15	6.7	6.0	3	0	Me resulta interesante y util para poder comprender como tratar este tipo de datos
+		aida2	18	F	20	Derecha	izquierdo	68	Der s Izq	4	Si	173	3,2	5.9		6.9	4	2	3	Me parece interesante
+		guisanor	21	M	21.5	Derecha	Derecho 	73	Der s Izq 	1	Si	177	7.4	CONV	NA	NA	5.5	6	0	Veremos que tal... 
+		alrovic	21	M	19	Derecha	Derecho	62	Der s Izd	6	No	177	7,6	CONV	CONV	CONV	CONV	4	3	Me esta pareciendo muy interesante y muy util en un futuro
+		mafea6	19	F	20	Derecha	Derecho	65	Der s Izq	2	No	160	6.88	5.97	2	7.35	5.5	3	0	Me parece una asignatura interesante y útil para adquirir conocimiento sobre el tratamiento de datos y comprenderlo mejor
+		aorgal	18	M	20	Derecha	Derecho	67	Der s Izq	4	No	174	7	7.48	?	6,8	6.1	1	0	Está bien que sea más práctica, a ver si aprobamos
+		atora	19	M	18	Derecha	Derecho	70	Der s Izq	4	No	178	6.9	7.86	5.81	7	7,2	2	0	Esperemos que sea mejor que DCS y aprovemos
+		gabibri	18	M	20.5	Derecha	Izquierdo 	58	Izq s Der	5	No	180	8.1	5.7	6.5	7.3	6.7	3	0	Espero que sea muy práctica y nos ayude a obtener conocimientos
+		ferguial	19	M	19	Derecha	Derecho	60	Der s Izq	3	No	171	7	6.2		0	6	3	0	Asignatura util para empezar a tratar los datos.
+		iscarman	18	M	19	Derecha	Izquierdo	71	Der s Izd	3	No	177	NC	4.64		6.7	7	1	0	Me parece una asignatura útil por ser tan práctica
+		albelcor	18	F 	20	Izquierda	Izquierdo	62	Izq s Der	0	No	173	7.93	NC 	?	5.9	6	0.5	0	Interesante, veremos como se desarrolla la asignatura 
+		lomaral6	18	M	22	Derecha	Izquierdo	60	Der s Izq	3	No	185	4	4.9	NA	4	4	3	0	Me parece una asignatura interesante y la vez bastante util
+		miboroig	19	M	23	Derecha	Derecha	64	Izq s Der	0	No	179	NC	NC		7,33	NC	3	0	Con la práctica, la asignatura se hace más llevadera.
+		maruasie	18	F	18	Izquierda	Izquierdo	69	Izq s Der	2	No	164	7.54	5.76	?	?	7.1	2	0	Encara no conec l'assignatura, no puc opinar. Però segurament ho faré prompte.
+		namijor	18	M	21	Izquierda	Izquierdo	60	Izq s Der	4	no	183	2.25	5.55	?	6.5	2.3	1	10	Parece muy interesante y util 
+		jortevi	18	M	19	Derecha	Derecha	64	Der s Izq	4	No	170	3,2	2,6	NA	6.23	2,9	1	0	La asignatura parece que va a ser fácil de llevar, y se agradece la práctica.
+		andoto	18	F	18	Derecha	Derecho	63	Der s Izq	4	No	163	7.2	5.91	?	6.72	5.5	2	0	Parece útil para el futuro
+		tolpons	18	F	17	Derecha	Izquierdo	80	Izq s Der	2	No	165	8,65	7,79	6	7,19	8	2	0	Parece interesante y práctica para el futuro
+		vadalpe	18	F	18	Derecha	Izquierdo	54	Izq s Der	5	No	156	7.2	4		7,41	5.5	6	4.5	Parece útil.
+		caedelas	18	F	18	Derecha	Derecho	70	Der s Izq	0	No	167	3.58	5.39			5.9	3	0	Una asignatura que parece útil por la gran cantidad de práctica.
+		borda2	21	M	21	Derecha	Derecho	84	Der s Izq	2	No	182	7,53	4	10,63	9,1	6	0	0	Ojalá no dure tanto como la encuesta de DCS 🤡
+		avason	20	M	23	Derecha	Derecho	80	Der s Izq	0	Si	186	7.20	8.13	?	?	1.4	1	0	Solo por el nombre de la asignatura es obvio que lo que vayamos a ver será una parte muy importante en el trabajo de un cientifico de datos.
+		ovarvas	21	F	19	Derecha	Izquierdo 	67	Der s Izd	0	No	163	NA	NA	NA	NA	NA	3	0	Espero la asignatura, al tomarla como optativa, me ayude a mejorar como profesionista en un futuro. 
+		pagopas	20	M	21.5	Derecha	Derecho	64	Der s Izq	5	Si	175	6,9	NC	?	?	?	3	0	Espero que sea tan util como parece
+		ahsalam	19	F	19	Derecha	Derecho	76	Der s Izq	4	No	171	7,34	7,82	?	?	5,8	1	0	Parece una aisgnatura interesante por el nombre, esperemos que lo sea.
+		jayacor	18	M	20	Derecha	Izquierdo	72	Der s Izq	0	No	173	8,11	7,33	6,8	7,35	7,25	1	0	Buena asignatura para profundizar  en el aprendizaje del manejo de los datos.
+		marctor2	18	M	19	Derecha	Derecha	70	Der s Izq	4	No	178	8,2	8	?	?	6.5	2	0	Espero que sea útil 
+		albofu	18	M	21	Derecha	Izquierdo	64	Der s Izq	2	No	175	7.5	6			6	3	0	Muchas expectativas hacia la signatura.
+		caida	22	F	19	Derecha	Derecho	90	Ninguna	2	No	169	8,07	8,89	10,88	9,5	8,5	2	0	Con ganas de aprender y ponerlo en práctica. A ver si estos carácteres molestan a la hora de analizar: 데이터 과학
+		claupema	18	M	19.5	Derecha	Izquierdo	72	Der s Izq	3	No	177	6,822	6,66	?	6,42	5,8	0	0	Creo que he hecho buena eleccion de carrera porque tenemos los mejores profes de la uni
+		algumar	18	M	19	derecha	Derecho	72	Izq s Der	5	No	183	7.8	8.5	?	4	7.8	2	0	Creo que sera una asignatura parecida a datos ciencia y sociedad aunque mas práctica
+		casana7	18	M	22	Derecha	Izquierdo	69	Der s Izq	2	No	175	7	4	9.10	7.8	7	2	0	Tengo ganas de ver este nuevo punto de vista y de manera de tratar los datos
+		jarume	18	M	21	Derecha	Izquierdo	60	Der s Izq	4	No	175	10	8.46	8.96	8.2	9	2	0	Creo que va a ser igual que Datos, Ciencia y Sociedad, solo que mucho más aplicada y práctica
+		guigadal	18	M	19	Derecha	Izquierdo	76	Izq s Der	5	No	173	7,875	5,81		8,26	7,3	3	0	Será una buena asignatura para profundizar en el análisis de datos.
+		dasanhom	18	M	22	Izquierda	Derecha	60	Der s Izq	1	No	184	8	8	?	8.1	7.8	1	0	No se que poner
+		marmuoz3	18	M	21	Derecha	Izquierdo	66	Der s Izq	0	No	185	9,49	9,57	8,6	8,47	8	1	0	Espero que sea entretenido
+		yingmai	18	F	18	Derecha	Derecho	65	Der s Izq	0	No	168	7,705	7,38		8	7,2	1	0	Espero que sea interesante
+		ancar8	19	F 	18	Derecha	Derecho	73	Der s Izq	0	No	164	NC	NC	6.76	NC	NC	2	20	Espero aprobar.
+		carere	18	F	19	Derecha	Izquierda	60	Der s Izq	2	.No	160	7,14	7,62	7,26	7,7	7,15	3	3	No sé si se pondrá más interesante, ya lo veremos más adelante.
+		nasanfe3	18	F	18	Derecha	Derecha	72	Der s Izq	3	No	165	8	6	8,88	7,4	7	1	0	Me parece aburrida
+		paumar31	18	F	19	Derecha	Derecha	60	Der s Izq	0	No	163	8	7		6,13	7	3	0	Espero que sea un poco más divertida
+		monberm3	18	F	18	Derecha        	Izquierdo       	76	Der s Izq        	4	No	171	8,03	7	9,26	8,7	7,3	1	0	Espero aprender y llegar a ponerlo en práctica
+		juanora3	19	M	19	Derecha	Derecha	65	Der s Izq	3	Si	178	7	NA	NA	NA	NA	1,5	0	Asignatura muy practica y apicable en muchos ambitos.
